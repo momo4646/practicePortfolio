@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+:root {
+  --blue-theme: #1e2edd;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+h2 {
+  color: var(--blue-theme);
+  font-size: 2.5em;
+}
+
+#navbar {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  row-gap: 20px;
+  align-items: center;
+  background: #eee;
+}
+
+#navbar ul {
+  height: 100%;
+  display: flex;
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  height: 100%;
+  width: 7em;
+  padding: 20px 0;
+  font-size: 1.1em;
+  text-align: center;
+  text-decoration: none;
+  color: var(--blue-theme);
+}
+
+#navbar li:last-of-type {
+  padding-right: 20px;
+}
+
+#navbar a:hover {
+  background-color: var(--blue-theme) ;
+  color: white;
+}
+
+#welcome-section {
+  padding-top: 60px;
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  background: 
+    black 
+    url("https://images.unsplash.com/photo-1591439657848-9f4b9ce436b9?q=80&w=3804&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") 
+    fixed
+    no-repeat 
+    center;
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 15%;
+}
+
+.hero-title {
+  font-size: 5em;
+  color: white;
+}
+
+ .hero-paragraph{
+   color: white;
+   font-size: 1.5em;
+}
+
+#projects {
+  padding: 5% 5% 0;
+}
+
+.projects-title, .projects-paragraph {
+  margin-bottom: 10px;
+}
+
+.projects-container {
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5%;
+}
+
+.project-tile {
+  margin: 5%;
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.projects-img {
+  width: 100%;
+}
+
+.project-tile p {
+  text-align: center;
+  margin: 10px;
+  font-size: 1.2em;
+  color: var(--blue-theme);
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 2% 0;
+  background: var(--blue-theme);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#profile-link {
+  text-decoration: none;
+  color: white;
+}
+
+#profile-link:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 992px) {
+  .projects-container {
+  grid-template-columns: repeat(1, 1fr);
+}
+  .hero-title {
+    font-size: 4em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+}
