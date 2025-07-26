@@ -1,64 +1,69 @@
-body {
-  text-align: center;
-  font-size: 18px;
-  font-family: helvetica, sans-serif;
-}
-
-header {
-  display: block;
-  margin: 20px -8px 30px;
-  padding: 3px 0;
-  background-color: #ffd700;
-}
-
-#title {
-  font-size: 2.5rem;
-  font-weight: 700; 
-}
-
-
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: auto;
-}
-
-figcaption {
-  display: block;
-  margin: 15px 0;
-}
-
-#achievements-section {
-  background-color: #DCDCDC;
-  padding: 30px;
-  margin: 18px -8px 0;
-
-}
-
-
-ul {
-  text-align: left;
-  width: 75%;
-  max-width: 600px;
-  padding: auto;
-  margin: 20px auto;
-}
-
-ul li {
-  margin-top: 40px;
-  
-}
-
-#tribute-info {
-  display: block;
-  margin: 20px -8px;
-  padding: 15px 0;
-  background-color: #ffd700;
-  color: black;
-}
-
-#tribute-info a {
-  color: black;
-}
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <navbar id="navbar">
+        <ul>
+          <li><a href="#welcome-section">Welcome</a></list>
+          <li><a href="#projects">Projects</a></list>
+          <li><a href="#contact-me">Contact Me</a></list>
+      </navbar>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1 class="hero-title">Hello,</br> I'm Mariam!</h1>
+        <p class="hero-paragraph">A Front End Developer</p>
+      </section>
+      <section id="projects">
+        <h2 class="projects-title">Check Out My Projects</h2>
+        <p class="projects-paragraph">Each project helped me learn important skills in developing responsive websites.</p>
+        <div class="projects-container">
+          <a href="https://codepen.io/momo4646/pen/LYwpexr" target="_blank" class="project-tile">
+            <img 
+              class="projects-img"
+              src="https://images.unsplash.com/photo-1727727136077-bf7668a68ecd?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Photo of Tribute Page Project" 
+            >
+            <p>Tribute Page</p>
+          </a>
+          <a href="https://codepen.io/momo4646/pen/QWejaWw" target="_blank" class="project-tile">
+            <img 
+              class="projects-img"
+              src="https://images.unsplash.com/photo-1727727976768-69d50eb8537d?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8fA%3D%3D"
+              alt="Photo of Product Landing Page" 
+            >
+            <p>Project Landing Page</p>
+          </a>
+          <a href="https://codepen.io/momo4646/pen/abevEJq" target="_blank" class="project-tile">
+            <img 
+              class="projects-img"
+              src="https://images.unsplash.com/photo-1727727976728-3bb4bf01a81b?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Photo of Technical Documentation" 
+            >
+            <p>Technical Documentation Project</p>
+          </a>
+          <a href="https://codepen.io/momo4646/pen/MWNarJJ" target="_blank" class="project-tile">
+            <img 
+              class="projects-img"
+              src="https://images.unsplash.com/photo-1727727976688-30c7150333a2?q=80&w=3840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Photo of Survey Form Project" 
+            >
+            <p>Survey Form Project</p>
+          </a>
+        
+        <div>
+      </section>
+    </main>
+    <footer>
+      <section id="contact-me">
+        <p>Contact me on <a href="https://github.com/momo4646" target="_blank" id="profile-link">Github</a></p>
+      </section>
+    </footer>
+  </body>
+</html>
